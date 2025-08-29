@@ -1,0 +1,9 @@
+- name: Installing Python
+  hosts: all
+
+  become: yes
+  tasks:
+  - name: Install latest python
+    apt:
+      name: python
+      state: present
